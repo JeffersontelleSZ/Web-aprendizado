@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Elementos do formulario</title>
+  </head>
+  <body>
+    <form action="#" method="GET">
+      <!-- Elemento input -->
+      <input type="text" name="nome" placeholder="Ensira seu nome" />
+
+      <!-- Elemento select -->
+      <select name="sexo" id="sexo">
+        <option value="masc">Masculino</option>
+        <option value="femin">Feminino</option>
+      </select>
+
+      <!-- Elemento datalist -->
+      <input type="text" name="list" id="list" list="browser" />
+      <datalist name="browser" id="browser">
+        <option value="explore">Internet Explore</option>
+        <option value="chrome">Chrome</option>
+      </datalist>
+    </form>
+  </body>
+</html>

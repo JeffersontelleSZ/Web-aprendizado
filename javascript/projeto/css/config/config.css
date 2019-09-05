@@ -1,0 +1,26 @@
+/* Configuração reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FiraCode-Regular";
+  src: url(FiraCode-Regular.ttf);
+}
+
+body {
+  font-family: "FiraCode-Regular";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}

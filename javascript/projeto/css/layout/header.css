@@ -1,0 +1,45 @@
+.header-nav {
+  background-color: transparent;
+}
+
+.header-top {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 700;
+  color: cadetblue;
+}
+
+.header-logo::before {
+  content: ">=";
+  display: inline-block;
+  color: blueviolet;
+}
+
+.header-logo::after {
+  content: "<=";
+  display: inline-block;
+  color: blueviolet;
+}
+
+/* Navbar */
+.header-navbar {
+  display: flex;
+  list-style: none;
+}
+
+.header-item {
+  margin-right: 1rem;
+}
+
+.header-item:hover {
+  color: cadetblue;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}

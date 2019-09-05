@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox</title>
+
+    <!-- CSS -->
+    <style>
+      /* header */
+      .header {
+        background-color: red;
+        padding: 4rem 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      .wrapper {
+        margin-top: 10rem;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: 20px;
+      }
+
+      .item {
+        width: 30%;
+        height: 400px;
+        background-color: green;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">Header</header>
+
+    <section class="wrapper">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+    </section>
+  </body>
+</html>
