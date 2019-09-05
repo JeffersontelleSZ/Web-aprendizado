@@ -20,3 +20,13 @@ O que é ?
 - \$('.classe1 .classe2:last')
 - \$('.classe1 .classe2:even')
 - \$('.classe1 .classe2:odd')
+
+## Selecionado atributos
+
+- \$('div').attr('style')
+- \$('img').attr('src', 'imagens_01.jpg')
+
+## Selecionado conteudo
+
+- \$('h1').html('Alterando o conteudo')
+- \$('p').text('alterando ')
