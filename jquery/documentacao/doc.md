@@ -30,3 +30,15 @@ O que é ?
 
 - \$('h1').html('Alterando o conteudo')
 - \$('p').text('alterando ')
+
+## \$.each()
+
+Syntax
+
+\$.each(array, callback);
+
+```javascript
+$.each($(".interesse:checked"), (indice, valor) => {
+  console.log(indice, valor);
+});
+```
