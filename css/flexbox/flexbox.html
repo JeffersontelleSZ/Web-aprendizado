@@ -6,47 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Flexbox</title>
 
-    <!-- CSS -->
     <style>
-      /* header */
-      .header {
-        background-color: red;
-        padding: 4rem 0;
+      .container {
+        background: #eee;
+        height: 700px;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-      }
+        /* flex-wrap: wrap; */
+        /* flex-flow: row wrap; */
 
-      .wrapper {
-        margin-top: 10rem;
-
-        display: flex;
         justify-content: space-between;
-        flex-wrap: 20px;
+        /* align-items: baseline; */
       }
 
-      .item {
-        width: 30%;
-        height: 400px;
-        background-color: green;
+      .items {
+        width: 200px;
+        height: 200px;
+        background: rgb(218, 153, 57);
+        margin: 0 2rem;
+      }
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
+      .items:nth-child(1) {
+        /* order: 2; */
+      }
+      .items:nth-child(2) {
+        /* flex-grow: 2; */
+        /* flex-basis: 50% auto; */
+        align-self: center;
+      }
+      .items:nth-child(3) {
+        /* order: 1; */
+        align-self: flex-end;
       }
     </style>
   </head>
   <body>
-    <header class="header">Header</header>
-
-    <section class="wrapper">
-      <div class="item">item 1</div>
-      <div class="item">item 2</div>
-      <div class="item">item 3</div>
-    </section>
+    <div class="container">
+      <div class="items">Item 1</div>
+      <div class="items">Item 2</div>
+      <div class="items">Item 3</div>
+      <!-- <div class="items">Item 4</div>
+      <div class="items">Item 5</div>
+      <div class="items">Item 6</div> -->
+    </div>
   </body>
 </html>

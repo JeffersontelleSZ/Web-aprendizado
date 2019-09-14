@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrinho de compras</title>
+  </head>
+  <body>
+    <!-- Tabela -->
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <div>R$ 29,90</div>
+          </td>
+          <td>
+            <input type="number" />
+          </td>
+        </tr>
+      </tbody>
+
+      <tr>
+        <td></td>
+        <td>Total das compras</td>
+        <td><div id="total">R$ 29,90</div></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+
+  <script>
+    let total = document.getElementById("total");
+    // alert(total.innerHTML);
+
+    function moneyTextToFloat(text) {
+      let cleanText = text.replace("R$ ", "").replace(",", ".");
+      return parseFloat(cleanText);
+    }
+
+    function floatToMoneyText(value) {
+      let text = value < 1 ? "0" : "";
+    }
+  </script>
+</html>
