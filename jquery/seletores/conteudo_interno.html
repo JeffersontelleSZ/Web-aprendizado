@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Documento Inicialização</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="div1" style="border: 1px solid #000; width: 200px; height: 200px">
-      Div1
+        Div1
     </div>
 
     <div id="div2" style="border: 1px solid #000; width: 200px; height: 200px">
-      Div2
+        Div2
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-      // Manipulando conteudo dos elementos
+        // Manipulando conteudo dos elementos
 
-      $(document).ready(() => {
-        // HTML
-        $("#div1").html("<h1>Trocando o texto da div</h1>");
+        $(document).ready(() => {
+            // HTML
+            $("#div1").html("<h1>Trocando o texto da div</h1>");
 
-        // TEXT
-        $("#div2").text("Trocando os texto da div");
-      });
+            // TEXT
+            $("#div2").text("Trocando os texto da div");
+        });
     </script>
-  </body>
+</body>
+
 </html>

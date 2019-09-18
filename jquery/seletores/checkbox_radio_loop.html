@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Manipulando valores do input e select</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <p>Nome:</p>
     <input type="text" id="nome" />
 
@@ -15,10 +17,10 @@
 
     <p>Onde nos encontrou ?</p>
     <select name="" id="origem">
-      <option value="1">Google</option>
-      <option value="2">Facebook</option>
-      <option value="3">Rádio</option>
-      <option value="4">Outros meios</option>
+        <option value="1">Google</option>
+        <option value="2">Facebook</option>
+        <option value="3">Rádio</option>
+        <option value="4">Outros meios</option>
     </select>
 
     <p>Sexo:</p>
@@ -40,14 +42,15 @@
 
     <!-- Meus scripts -->
     <script>
-      $(document).ready(() => {
-        $(".sexo:checked").val();
+        $(document).ready(() => {
+            $(".sexo:checked").val();
 
-        // Percorrendo valores com $.each
-        $.each($(".interesse:checked"), (indice, valor) => {
-          console.log(indice, valor.value);
+            // Percorrendo valores com $.each
+            $.each($(".interesse:checked"), (indice, valor) => {
+                console.log(indice, valor.value);
+            });
         });
-      });
     </script>
-  </body>
+</body>
+
 </html>
