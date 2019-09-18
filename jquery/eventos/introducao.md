@@ -7,16 +7,21 @@
 ## Mouse
 - mousedown()
 - mouseup()
+- mousemouve()
+- mouseover()
 - click()
 - dblclick()
 
 ## Teclado
+- keydown()
+- keypress()
+- keyup()
 
 ## Janela
-
-## Formulario
-
-## Browser
 - onload()
 - scroll()
 - resize()
+
+## Formulario
+- focus()
+- focusout()
