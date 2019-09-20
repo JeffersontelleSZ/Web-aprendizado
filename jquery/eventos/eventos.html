@@ -6,8 +6,28 @@
     <title>jQuery</title>
 
     <style>
-        body {
-            height: 100000px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #divExterna {
+            background-color: #ccc;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            position: relative;
+        }
+
+        #divInterna {
+            background-color: skyblue;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 
@@ -54,6 +74,66 @@
             $('#btn2').dblclick(() => {
                 $('#div3').css('background-color', 'orange')
             })
+
+            $('#div3').mousemove(e => {
+                // console.log(e.offsetX, e.offsetY)
+                $('#resultatoDiv').html(' X:' + e.offsetX + ' / Y: ' + e.offsetY)
+            })
+
+            // mouseover / mouseout
+            /*
+            $('#divExterna').mouseover(() => {
+                $('#resultadoDiv1').html(' entrou')
+                console.log('divExterna (entrou)')
+            })
+
+            $('#divExterna').mouseout(() => {
+                $('#resultadoDiv1').html(' saiu')
+                console.log('divExterna (saiu)')
+            })
+
+            $('#divInterna').mouseover(() => {
+                $('#resultadoDiv2').html(' entrou')
+                console.log('divInterna (entrou)')
+            })
+
+            $('#divInterna').mouseout(() => {
+                $('#resultadoDiv2').html(' saiu')
+                console.log('divInterna (saiu)')
+            })
+            */
+
+            // mouseenter / mouseleave
+            $('#divExterna').mouseenter(() => {
+                $('#resultadoDiv1').html(' entrou')
+                console.log('divExterna (entrou)')
+            })
+
+            $('#divInterna').mouseenter(() => {
+                $('#resultadoDiv2').html(' saiu')
+                console.log('divInterna (saiu)')
+            })
+
+            $('#divExterna').mouseleave(() => {
+                $('#resultadoDiv1').html(' entrou')
+                console.log('divInterna (entrou)')
+            })
+
+            $('#divInterna').mouseleave(() => {
+                $('#resultadoDiv2').html(' saiu')
+                console.log('divInterna (saiu)')
+            })
+
+            // Eventos teclado
+            $('#text').keydown(e => {
+                let txt = $(e.target).val()
+                $('#resultadoText').html(txt)
+            })
+
+            $('#text').keyup(e => {
+                let txt = $(e.target).val()
+                $('#resultadoText').html(txt)
+            })
         })
     </script>
 </head>
@@ -84,13 +164,20 @@
         <button id="btn2" type="button">Clique aqui 2x</button>
         <div id="div3" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px">
         </div>
-        <span>Resultado do evento sobre a div</span>
+        <span>Resultado do evento sobre a div</span><span id="resultatoDiv"></span>
+
+        <div id="divExterna">
+            <div id="divInterna"></div>
+        </div>
+        <span>Div externa</span><span id="resultadoDiv1"></span>
+        <br />
+        <span>Div Interna</span><span id="resultadoDiv2"></span>
         <hr />
 
         <h3>Teclado</h3>
         <span>Nome:</span>
-        <input type="text" />
-        <span>Resultado do evento sobre o input</span>
+        <input type="text" id="text" />
+        <span id="resultadoText">Resultado do evento sobre o input</span>
         <hr />
 
         <h3>Formulário</h3>
@@ -112,7 +199,7 @@
         </form>
     </div>
 
-    <!-- <script>
+    <script>
         let btn = document.querySelector('#btn2');
         let div = document.querySelector('#div3');
 
@@ -121,7 +208,7 @@
         function clickColor() {
             div.style.backgroundColor = 'black';
         }
-    </script> -->
+    </script>
 </body>
 
 </html>

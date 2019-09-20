@@ -8,13 +8,14 @@
 - mousedown()
 - mouseup()
 - mousemouve()
+- mouseenter()
 - mouseover()
+- mouseout()
 - click()
 - dblclick()
 
 ## Teclado
 - keydown()
-- keypress()
 - keyup()
 
 ## Janela
@@ -24,4 +25,6 @@
 
 ## Formulario
 - focus()
-- focusout()
+- blur()
+- change()
+- submit()
