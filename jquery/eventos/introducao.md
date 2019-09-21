@@ -28,3 +28,10 @@
 - blur()
 - change()
 - submit()
+
+## eventos programaticos e auxiliares
+- trigger()
+- hover()
+- toggleClass()
+
+## Efeitos Especiais
