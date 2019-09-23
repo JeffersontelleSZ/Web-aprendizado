@@ -35,3 +35,21 @@
 - toggleClass()
 
 ## Efeitos Especiais
+- show('slow')
+- hide('medio')
+- toggle('fast')
+
+- fadeOut()
+- fadeIn()
+- fadeToggle()
+- fadeTo('slow', 0.3)
+
+- slideUp()
+- slideDown()
+- slideToggle()
+
+## Animações
+- Atua sobre qualquer propriedade CSS numerica
+- animate('propriedade visual', 'opcao de transição')
+
+## Ajax
